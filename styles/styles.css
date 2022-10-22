@@ -1,0 +1,93 @@
+:root {
+    
+    font-size : 16px ;
+    justify-content: center ;
+}
+
+* {
+    font-family: 'Roboto', sans-serif ;
+    font-weight : 500 ;
+    margin: 0;
+    padding: 0;
+} ;
+
+body {
+    color : green ;
+}
+
+/*Especificidad */
+
+/*
+class 
+id
+
+*/
+
+.body {
+    height : 100vh ;
+    color : red ;
+}
+
+.body .header {
+    height : 90% ;
+    color : blue ;
+}
+
+.body .header .section {
+    border : .2rem solid gray ;
+    border-radius : 25px ;
+}
+
+.body .header .section .article {
+    height: 50% ;
+    color : yellow ;
+}
+
+.body .header .section .article__header h1 {
+    font-size : 30px ;
+    color : #000 ;
+    text-align: center ;
+}
+
+.body .header .navbar .navbar__menu {
+    display : flex ;
+    flex-direction : row ;
+    justify-content : center ;
+    align-items: center;
+    height: 300px;
+
+}
+
+.body .header .navbar .navbar__menu .navbar__menu--item {
+    list-style-type : none ;
+    border : 2px solid blue ;
+    padding: 15px ;
+    margin: 7px ;
+    text-align: right ;
+}
+
+/* BEM = Bloque - Elemento - Modificador */
+
+body .body #header {
+    color : green ;
+}
+
+body #header {
+    color : grey !important ;
+}
+
+/*
+ class 90%
+ id : 10%
+    
+* */
+
+/* Imagenes */
+
+/*
+* image1.JPG 500K 
+* imag1: .png; 100K
+* imag: 1px;imag1.svg : 15K
+* imagen 1.webp:
+* .avif :
+* */
