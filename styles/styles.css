@@ -1,7 +1,25 @@
+/* Header : 30vh
+*  Aside : 0 ;
+*  Main : 60vh ;
+*  Footer : 10vh ;
+* */
+
 
 :root {
     
     justify-content: center ;
+
+    /* Paleta de colores */
+    /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
+    --c_red500 : #e63946ff;
+    --c_grey200 : #f1faeeff;
+    --c_cyan500: #a8dadcff;
+    --c_blue100: #457b9dff;
+    --c_blue500: #1d3557ff;
+    --c_black : #000 ;
+    --c_white : #fff ;
+
+    --mayuscula : Uppercase ; 
 }
 
 html {
@@ -14,7 +32,94 @@ html {
     
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
-} ;
+}
 
+button {
+    all : unset ;
+}
 
+body {
+    background: hsla(195, 100%, 39%, 1);
+    background: linear-gradient(180deg, hsla(195, 100%, 39%, 1) 0%, hsla(190, 77%, 88%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(195, 100%, 39%, 1) 0%, hsla(190, 77%, 88%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(195, 100%, 39%, 1) 0%, hsla(190, 77%, 88%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0096C7", endColorstr="#CAF0F8", GradientType=1 );
+}
+
+.header {
+    width: 100vw;
+    height: 30vh;
+}
+
+.header .section {
+    border : 2px red solid ;
+}
+
+.header .section .article {
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center ;
+
+    border : 2px green solid ;
+    
+    color: var( --c_blue500 ) ;
+}
+
+.header .section .article__header--title {
+    font-size : 2.5rem ;
+    font-weight: 700 ;
+    text-transform: Uppercase ;
+
+}
+
+.header .section .article__header--subtitle {
+    font-size: 1.5rem ;
+}
+
+.main {
+    height: 60vh;
+    width: 100vw;
+
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center ;
+}
+
+.main .section .article__main--menu {
+    width : 50% ;
+    height : 100% ;
+
+    display: flex ;
+    flex-direction : row ;
+    justify-content : space-around ;
+    align-items : center ;
+
+}
+
+.main .section .article__main--item {
+    min-width : 150px ;
+    width : 200px ;
+    max-width : 300px ;
+    height: 2.5rem;
+
+    border : 1px solid var( --c_blue100 ) ;
+    border-radius : 50px ;
+
+    color : var( --c_white ) ;
+    background-color : var( --c_blue100 ) ;
+
+}
+
+.footer {
+    height: 10vh ;
+    width: 100vw;
+
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center ;
+}
