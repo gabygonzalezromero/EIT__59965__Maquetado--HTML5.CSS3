@@ -6,6 +6,8 @@
         
         <title>Hola mundo!</title>
         
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="normalizer.css">
         <link rel="stylesheet" href="./styles/styles.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +18,11 @@
     <body class="body" >
         <!--Comienzo Header-->
         <header class="header" >
-            <section class="section" >
+           <section class="section" >
                 <article class="article" >
+                    <figure class="header__article--img">
+                        <img class="" src="./images/avatar.svg" alt="Avatar">
+                    </figure>
                     <header class="article__header" >
                         <h1 class="article__header--title" > { Gaby Gonzalez Romero } </h1>
                         <h4 class="article__header--subtitle" > Front End Dev. </h4>
@@ -32,7 +37,7 @@
         <!--Fin Aside-->
         <!--Comienzo Main-->
         <main class="main" >
-            <section="section" >
+            <section class="section" >
                 <article class="article" >
                     <header class="article__header" >
                         <p class="article__header--paragraph" >
@@ -53,13 +58,12 @@
                             <button class="article__main--menu--item" >
                                 <a href="#">
                                     <figure class="icon" >
-                                        <img width="32px" src="images/i_github.svg" alt="ES : Icono GitHub | EN : GitHub" />
+                                        <img src="images/i_github.svg" alt="ES : Icono GitHub | EN : GitHub" />
                                     </figure>
                                         GitHub
                                     <span class="icon--hover" ></span>
                                 </a>
                             </button>
-                                <button>Contenido</button>
                        </div>
                     </main>
                 </article>
@@ -67,11 +71,12 @@
        </main>
         <!--Fin Main-->
         <!--Inicio Footer-->
-        <footer>
+        <footer class="footer" >
             <p>2022 - Educacion IT | Todos los derechos reservados</p>
             <details>
-                <summary>Autor : ... </summary>
-                <address>... | <a href="mailto:"> ...@...</a></address>
+                <summary>Autor : Gaby </summary>
+                <p>Lorem <em>hola</em>ipsum dolor sit amet consectetur, adipisicing elit. Alias, accusamus.</p>
+                <!--<address> Buenos Aires, Argentina | <a href="mailto:gabygonzalezromero@gmail.com"> Correo </a></address>-->
             </details>
         </footer>
         <!--Fin Footer-->
