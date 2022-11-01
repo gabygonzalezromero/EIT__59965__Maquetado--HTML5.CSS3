@@ -1,6 +1,6 @@
-/* Header : 30vh
+/* Header : 10vh
 *  Aside : 0 ;
-*  Main : 60vh ;
+*  Main : 80vh ;
 *  Footer : 10vh ;
 * */
 
@@ -40,49 +40,66 @@ button {
     all : unset ;
 }
 
-/*body {*/
-    /*background: hsla(195, 100%, 39%, 1);*/
-    /*background: linear-gradient(180deg, hsla(195, 100%, 39%, 1) 0%, hsla(190, 77%, 88%, 1) 100%);*/
-    /*background: -moz-linear-gradient(180deg, hsla(195, 100%, 39%, 1) 0%, hsla(190, 77%, 88%, 1) 100%);*/
-    /*background: -webkit-linear-gradient(180deg, hsla(195, 100%, 39%, 1) 0%, hsla(190, 77%, 88%, 1) 100%);*/
-    /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0096C7", endColorstr="#CAF0F8", GradientType=1 );*/
-/*}*/
-
 .icon {
     width: 1rem;
     height: 1rem; 
 }
 
-.header {
+/* -- Comienzo Header -- */
+
+:is( .header , .footer ) {
     width: 100vw;
-    height: 40vh;
-
-    display : flex ;
-    flex-direction : column ;
-    justify-content : center ;
-    align-items : center ;
-}
-
-.header .section .article article__header--paragraph {
-}
-
-.header .section .article .header__article--img {
-    display : block ;/* Block, Inline, Flex . Inline-block ... */ 
-    margin-left : auto ;
-    margin-right: auto ;
-    width: 10rem;
-    border-radius : 15px ;
-    box-shadow: 5px 15px 15px 0px var( --c_blue100 ) ;
-}
-
-.header .section .article .header__article--img img {
-    width: 150px;
-    height: 150px;
-
+    height: 10vh;
 }
 
 .header .section .article {
-    color: var( --c_blue500 ) ;
+    display : flex ;
+    flex-flow : row nowrap ; 
+    justify-content : space-between ;
+    align-items : center ;
+    
+    width: 100% ;
+    padding : 1rem ;
+
+    background-color : red ;
+}
+
+.header .section .article .navbar__button {
+    display : flex ;
+    flex-flow : column nowrap ;
+    align-items : center ;
+    justify-content : center ;
+    gap : .5rem ;
+
+    height : 2rem ;
+    width : 2rem ;
+
+
+    background-color : transparent ;
+
+}
+
+.header .section .article .navbar__button > span {
+    width : 100% ;
+    border : 2px solid var( --c_black ) ;
+    border-radius : 5px ;
+
+    transition : all .5s ;
+    transform-origin : left ;
+}
+
+.header .section .article .navbar__button:hover span:first-child {
+    transform : rotate( 45deg ) ;
+    width : 2.1rem ;
+}
+
+.header .section .article .navbar__button:hover span:nth-child( 2 ){
+    opacity : 0 ;
+}
+
+.header .section .article .navbar__button:hover span:last-child {
+    transform : rotate( -45deg ) ;
+    width : 2.1rem ;
 }
 
 .header .section .article__header--title {
@@ -96,8 +113,10 @@ button {
     font-size: 1.5rem ;
 }
 
+/* -- Comienzo Main -- */
+
 .main {
-    height: 50vh;
+    height: 80vh;
     width: 100vw;
 
     display : flex ;
@@ -148,13 +167,14 @@ button {
     box-shadow : 0 5px 15px 0 var( --c_blue100 ) ;
 }
 
+/* -- Comienzo Footer -- */
 
 .footer {
-    height: 10vh ;
-    width: 100vw;
 
     display : flex ;
     flex-direction : column ;
     justify-content : center ;
     align-items : center ;
+    
+    background-color: blue ;
 }

@@ -6,8 +6,8 @@
         
         <title>Hola mundo!</title>
         
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="normalizer.css">
+        <!--<link rel="stylesheet" href="reset.css">-->
+        <!--<link rel="stylesheet" href="normalizer.css">-->
         <link rel="stylesheet" href="./styles/styles.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,13 +20,19 @@
         <header class="header" >
            <section class="section" >
                 <article class="article" >
-                    <figure class="header__article--img">
-                        <img class="" src="./images/avatar.svg" alt="Avatar">
-                    </figure>
-                    <header class="article__header" >
-                        <h1 class="article__header--title" > { Gaby Gonzalez Romero } </h1>
-                        <h4 class="article__header--subtitle" > Front End Dev. </h4>
-                    </header>
+                    <a href="#" >Menu</a>
+                    <nav class="navbar" >
+                        <button class="navbar__button" >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+<!--                        <ul class="navbar__menu" >-->
+                            <!--<li class="navbar__menu--item">Contacto</li>-->
+                            <!--<li class="navbar__menu--item">Email</li>-->
+                            <!--<li class="navbar__menu--item">Sobre m&iacute;</li>-->
+                        <!--</ul>-->
+                    </nav>
                 </article>
             </section>
        </header>
@@ -40,8 +46,11 @@
             <section class="section" >
                 <article class="article" >
                     <header class="article__header" >
+                        <h1 class="article__header--title" > { Gaby Gonzalez Romero } </h1>
+                        <h4 class="article__header--subtitle" > Front End Dev. </h4>
                         <p class="article__header--paragraph" >
-                            Bienvenid@ a mi p&aacute;gina de links sociales
+                            Bienvenid@ a mi p&aacute;gina de links sociales.
+                            <br>
                         </p>
                     </header>
                     <main class="article__main" >
@@ -51,7 +60,6 @@
                                     <figure class="icon" >
                                         <img src="./images/i_linkedin.svg" alt="ES : Icono LinkedIn | EN : LinkedIn" />
                                     </figure>
-                                        LinkedIn
                                     <span class="icon--hover" ></span>
                                 </a>
                             </button>
@@ -76,7 +84,8 @@
             <details>
                 <summary>Autor : Gaby </summary>
                 <p>Lorem <em>hola</em>ipsum dolor sit amet consectetur, adipisicing elit. Alias, accusamus.</p>
-                <!--<address> Buenos Aires, Argentina | <a href="mailto:gabygonzalezromero@gmail.com"> Correo </a></address>-->
+                <address>Buenos Aires, Argentina | <a href="mailto:gabygonzalezromero@gmail.com?subject=Hola!"> Correo </a>
+                </address>
             </details>
         </footer>
         <!--Fin Footer-->

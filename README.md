@@ -56,3 +56,13 @@ En la clase de hoy vimos :
         https://raw.githubusercontent.com/lodela/reset-CSS/main/reset.css
     normalizer.CSS3
         https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css
+
+---
+## Clase del 31 de Octubre de 2022
+
+Temas a tratar :
+
+    - Repaso de HTML5
+    - Repaso de propiedades de accesibilidad.
+    - Animaciones.
+    - Etiquetas :hover :before :after
