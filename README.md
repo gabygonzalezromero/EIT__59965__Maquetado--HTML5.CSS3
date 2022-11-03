@@ -66,3 +66,21 @@ Temas a tratar :
     - Repaso de propiedades de accesibilidad.
     - Animaciones.
     - Etiquetas :hover :before :after
+
+---
+## Clase del 2 de Noviembre de 2022
+
+Temas a tratar :
+
+    - Animacion.
+    - Etiquetas :hover :before :after
+    - Botones impostores (button vs a).
+        - Etiquetas `<button></button>` vs `<li> <a>...</a></li>`
+        - Lo correcto analizar el entorno y el uso segun la accesibilidad.
+    - Display `grid`.
+        display : GRID
+        grid-area
+        grid-template
+        grid-template-column
+        grid-template-row
+        grid-gap
